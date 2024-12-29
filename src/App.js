@@ -1,8 +1,11 @@
 import React from "react";
-import ContructionNoticeCreate from "./ContructionNoticeCreate";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./components/Home";
 
 export default () => {
-    return <div>
-        <ContructionNoticeCreate />
-    </div>;
+    return <Router>
+        <Routes>
+            <Route path="/" element={<Home />} />
+        </Routes>
+    </Router>
 };
