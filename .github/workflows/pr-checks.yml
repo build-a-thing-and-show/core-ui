@@ -4,14 +4,14 @@ on:
   pull_request:
     branches: [main]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
 
-    steps:
+#    steps:
     # Checkout code
-    - name: Checkout code
-      uses: actions/checkout@v3
+#    - name: Checkout code
+#      uses: actions/checkout@v3
 
     # Set up Node.js
     #- name: Set up Node.js
