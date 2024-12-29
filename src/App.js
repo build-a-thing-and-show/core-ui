@@ -5,7 +5,7 @@ import Login from "./components/Login";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
 
-export default () => {
+const App = () => {
     return <Router>
         <Routes>
             <Route path="/" element={<Home />} />
@@ -15,3 +15,5 @@ export default () => {
         </Routes>
     </Router>
 };
+
+export default App;
