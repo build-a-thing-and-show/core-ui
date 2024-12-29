@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+const ContructionNoticeCreate = () => {
     return <div
         style={{
             backgroundColor: '#2B2B2B', // Logo background dark gray
@@ -64,4 +64,6 @@ export default () => {
   `}
         </style>
     </div>
-}; 
+};
+
+export default ContructionNoticeCreate;

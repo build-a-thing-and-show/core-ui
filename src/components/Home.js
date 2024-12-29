@@ -1,6 +1,8 @@
 import React from "react";
 import ContructionNoticeCreate from "./ContructionNoticeCreate";
 
-export default () => {
+const Home = () => {
     return <div><ContructionNoticeCreate /></div>
 };
+
+export default Home;
