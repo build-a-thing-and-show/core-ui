@@ -4,29 +4,25 @@ on:
   pull_request:
     branches: [main]
 
-#jobs:
-#  build:
-#    runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-#    steps:
+    steps:
     # Checkout code
-#    - name: Checkout code
-#      uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
     # Set up Node.js
-    #- name: Set up Node.js
-    #  uses: actions/setup-node@v3
-    #  with:
-    #    node-version: 16
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 23
 
     # Install dependencies
-    #- name: Install dependencies
-    #  run: npm install
-
-    # Build the app
-    #- name: Build app
-    #  run: npm run build
+    - name: Install dependencies
+      run: npm install
 
     # Run tests
-    #- name: Run tests
-    #  run: npm run test
+    - name: Run tests
+      run: npm run test
