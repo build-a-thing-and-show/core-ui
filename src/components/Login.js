@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const handleSubmit = (event) => {
@@ -6,7 +6,8 @@ const handleSubmit = (event) => {
     // We make the call to login-service (or message bus) here
 }
 const Login = () => {
-
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
     return <div>
         <h1>Login Page</h1>
         <form onSubmit={handleSubmit}>
