@@ -1,14 +1,15 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import App from './App';
 
 
-test('renders Home component for "/" path', () => {
+test('renders Login component for "/" path', () => {
     render(
-        <MemoryRouter initialEntries={['/']}>
+        <MemoryRouter initialEntries={['/login']}>
             <App />
         </MemoryRouter>
     );
-    expect(screen.getByText(/Welcome to our Landing Page/i)).toBeInTheDocument();
+    expect(screen.getByText(/Login Page/i)).toBeInTheDocument();
 });
