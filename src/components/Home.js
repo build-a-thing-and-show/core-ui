@@ -1,10 +1,8 @@
 import React from "react";
-import ContructionNoticeCreate from "./ContructionNoticeCreate";
+import ConstructionNoticeCreate from "./ConstructionNoticeCreate";
 
 const Home = () => {
-    return <div>
-        <ContructionNoticeCreate />
-    </div>
+    return <div><ConstructionNoticeCreate /></div>
 };
 
 export default Home;
