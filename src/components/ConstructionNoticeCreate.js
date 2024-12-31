@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContsructionNoticeCreate = () => {
+const ConstructionNoticeCreate = () => {
     return <div
         style={{
             backgroundColor: '#2B2B2B', // Logo background dark gray
