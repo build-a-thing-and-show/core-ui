@@ -18,8 +18,9 @@ module.exports = {
     },
     plugins: ['react', 'react-hooks'],
     rules: {
-        // Add custom rules here (optional)
+        // Add custom rules here
         // Example:
         // "indent": ["error", 2], // Use 2 spaces for indentation
+        'eol-last': ['error', 'always'], // Enforces a newline at the end of every file
     },
 };
