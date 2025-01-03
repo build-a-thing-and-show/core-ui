@@ -24,9 +24,13 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    # Run eslint
+    - name: Run eslint
+      run: npm run lint
+    
     # Run tests
     - name: Run tests
-      run: npm test
+      run: npm run test
 
     # Authenticate with ECR
     - name: Login to ECR
@@ -65,5 +69,4 @@ jobs:
           docker pull ${{ secrets.ECR_REPOSITORY_URL }}:latest
           docker stop core-ui || true # Stop existing container (if any)
           docker rm core-ui || true   # Remove existing container (if any)
-          docker image prune
           docker run -d -p 3000:3000 --name core-ui ${{ secrets.ECR_REPOSITORY_URL }}:latest
