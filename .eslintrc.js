@@ -18,8 +18,9 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', 'react-hooks', '@typescript-eslint'],
+    plugins: ['react', 'react-hooks', '@typescript-eslint', 'import'],
     rules: {
         'eol-last': ['error', 'always'],
+        'import/prefer-default-export': 'error',
     },
 };

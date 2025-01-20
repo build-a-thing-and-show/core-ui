@@ -19,8 +19,6 @@ declare module '@mui/material/styles/createPalette' {
     900: string;
   }
 
-  interface PaletteColor extends ColorRange {}
-
   interface Palette {
     baseShadow: string;
   }
@@ -394,10 +392,10 @@ export const shape = {
   borderRadius: 8,
 };
 
-// @ts-ignore
-const defaultShadows: Shadows = [
+const defaultShadows = [
   'none',
   'var(--template-palette-baseShadow)',
-  ...defaultTheme.shadows.slice(2),
+  ...defaultTheme.shadows.slice(2, 25),
+  ...Array(Math.max(0, 25 - defaultTheme.shadows.length)).fill('none')
 ];
-export const shadows = defaultShadows;
+export const shadows = defaultShadows as unknown as Shadows;
