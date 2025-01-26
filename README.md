@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## MUI Integration
+
+This project uses [MUI](https://mui.com/), a popular React UI framework, to build a consistent and customizable user interface. MUI provides a comprehensive set of components and tools to help you build your application faster and with a modern look and feel.
+
+## Project Structure
+
+### Directories
+
+- **components**: Contains reusable React components used throughout the application.
+  - `Button.tsx`: Custom button component.
+  - `Header.tsx`: Header component for the application.
+  - `Footer.tsx`: Footer component for the application.
+
+- **shared-theme**: Contains shared theme configurations and styles for the application.
+  - `theme.ts`: Defines the MUI theme settings.
+  - `GlobalStyles.ts`: Contains global CSS styles applied to the application.
+
 ## Available Scripts
 
 In the project directory, you can run:
