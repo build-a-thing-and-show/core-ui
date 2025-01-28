@@ -11,13 +11,10 @@ This project uses [MUI](https://mui.com/), a popular React UI framework, to buil
 ### Directories
 
 - **components**: Contains reusable React components used throughout the application.
-  - `Button.tsx`: Custom button component.
-  - `Header.tsx`: Header component for the application.
-  - `Footer.tsx`: Footer component for the application.
 
 - **shared-theme**: Contains shared theme configurations and styles for the application.
-  - `theme.ts`: Defines the MUI theme settings.
-  - `GlobalStyles.ts`: Contains global CSS styles applied to the application.
+
+**For more information visit the templates under [material-ui](https://github.com/mui/material-ui/tree/v6.4.1/docs/data/material/getting-started/templates/sign-in).**
 
 ## Available Scripts
 
