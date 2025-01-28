@@ -2,20 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## MUI Integration
-
-This project uses [MUI](https://mui.com/), a popular React UI framework, to build a consistent and customizable user interface. MUI provides a comprehensive set of components and tools to help you build your application faster and with a modern look and feel.
-
-## Project Structure
-
-### Directories
-
-- **components**: Contains reusable React components used throughout the application.
-
-- **shared-theme**: Contains shared theme configurations and styles for the application.
-
-**For more information visit the templates under [material-ui](https://github.com/mui/material-ui/tree/v6.4.1/docs/data/material/getting-started/templates/sign-in).**
-
 ## Available Scripts
 
 In the project directory, you can run:
