@@ -19,7 +19,7 @@ test('renders Login component for "/login" path', () => {
             <App />
         </MemoryRouter>
     );
-    expect(screen.getByText(/Login Page/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Sign in/i })).toBeInTheDocument();
 });
 
 test('renders ForgotPassword component for "/forgot-password" path', () => {
@@ -28,7 +28,7 @@ test('renders ForgotPassword component for "/forgot-password" path', () => {
             <App />
         </MemoryRouter>
     );
-    expect(screen.getByText(/Forgot Password/i)).toBeInTheDocument();
+    expect(screen.getByText(/Enter your account's email address, and we'll send you a link to reset your password./i)).toBeInTheDocument();
 });
 
 test('renders Register component for "/register" path', () => {

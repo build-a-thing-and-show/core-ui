@@ -8,7 +8,9 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
+        'plugin:@typescript-eslint/recommended',
     ],
+    parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -16,11 +18,9 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', 'react-hooks'],
+    plugins: ['react', 'react-hooks', '@typescript-eslint', 'import'],
     rules: {
-        // Add custom rules here
-        // Example:
-        // "indent": ["error", 2], // Use 2 spaces for indentation
-        'eol-last': ['error', 'always'], // Enforces a newline at the end of every file
+        'eol-last': ['error', 'always'],
+        'import/prefer-default-export': 'error',
     },
 };
