@@ -75,7 +75,7 @@ jobs:
 
       - name: Deploy core-ui with Helm
         run: |
-          helm upgrade --install core-ui https://github.com/your-org/infrastructure/raw/main/deployments/helm/core-ui \
+          helm upgrade --install core-ui https://github.com/build-a-thing-and-show/infrastructure/raw/main/deployments/helm/core-ui \
             --namespace default \
             --set image.repository=${{ secrets.ECR_REPOSITORY_URL }} \
             --set image.tag=latest
