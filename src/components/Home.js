@@ -22,6 +22,18 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
+        // Check if IntersectionObserver is available (not in testing environment)
+        if (typeof IntersectionObserver === 'undefined') {
+            // In testing environment, make all sections visible
+            setVisibleSections({
+                hero: true,
+                summary: true,
+                about: true,
+                contact: true
+            });
+            return;
+        }
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {

@@ -10,7 +10,7 @@ test('renders Home component for "/" path', () => {
             <App />
         </MemoryRouter>
     );
-    expect(screen.getByText(/Welcome to our Landing Page/i)).toBeInTheDocument();
+    expect(screen.getByText(/Where creativity meets innovation/i)).toBeInTheDocument();
 });
 
 test('renders Login component for "/login" path', () => {
