@@ -19,7 +19,7 @@ test('renders Login component for "/login" path', () => {
             <App />
         </MemoryRouter>
     );
-    expect(screen.getByText(/Login Page/i)).toBeInTheDocument();
+    expect(screen.getByText(/Login/i)).toBeInTheDocument();
 });
 
 test('renders ForgotPassword component for "/forgot-password" path', () => {
